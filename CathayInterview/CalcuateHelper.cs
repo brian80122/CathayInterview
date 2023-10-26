@@ -8,7 +8,7 @@ namespace CathayInterview
         public static string[] Calculate(decimal rate, string[] input)
         {
             var sortedAmounts = input
-                .Select(x => ((x.Contains("-") ? 0 : decimal.Parse(x)) * rate).ToString(CultureInfo.InvariantCulture))
+                .Select(x => ((x.Contains("-") ? 0 : decimal.Parse(x)) * rate).Normalize().ToString(CultureInfo.InvariantCulture))
                 .OrderByDescending(x => x)
                 .ToArray();
 
