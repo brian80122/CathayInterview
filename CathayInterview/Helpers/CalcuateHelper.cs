@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
+using CathayInterview.Extensions;
 
-namespace CathayInterview
+namespace CathayInterview.Helpers
 {
     public static class CalculateHelper
     {
